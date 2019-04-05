@@ -25,5 +25,18 @@ public class Main {
         protectedToPublic protectedToPublic = new protectedToPublic();
         System.out.println(protectedToPublic.protectedToPublic(5,5));
         //we can inherit only one class, it can be inherited in multiple different classes
+        System.out.println("");
+        System.out.println("");
+
+        //private static public etc with dataTypes from classes/objects
+        methodSample.normalInt=5;
+        System.out.println(methodSample.normalInt);
+        System.out.println(com.major.methodSample.getStaticInt());
+        com.major.methodSample.setStaticInt(15);
+        System.out.println(com.major.methodSample.getStaticInt());
+        System.out.println(methodSample.addToStatic(10));
+        System.out.println(com.major.methodSample.getStaticInt());
+        methodSample.setPrivateInt(5);
+        System.out.println(methodSample.getPrivateInt());
     }
 }
